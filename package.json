@@ -2,7 +2,7 @@
   "name": "elite-travel-hub",
   "private": true,
   "version": "1.0.0",
-  "description": "Elite Travel Hub — premium tourist vehicle booking website and admin dashboard",
+  "description": "Elite Travel Hub \u2014 premium tourist vehicle booking website and admin dashboard",
   "workspaces": [
     "server",
     "client"
@@ -21,6 +21,7 @@
     "db:seed": "npm run db:seed -w server",
     "admin:create": "npm run admin:create -w server --",
     "images:process": "node scripts/process-images.mjs",
-    "test:e2e": "npm run test:e2e -w client"
+    "test:e2e": "npm run test:e2e -w client",
+    "snapshot:site": "node scripts/snapshot-site.mjs"
   }
 }

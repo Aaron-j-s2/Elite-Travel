@@ -1,0 +1,17 @@
+// Cloudflare Workers — website only (static assets, no server code).
+// Bookings, the contact form and the admin dashboard need the Node server (see README);
+// without it the site shows its saved content (client/src/data/site-snapshot.json)
+// and the forms ask visitors to call or WhatsApp.
+//
+// Build command:  npm ci && npm run build -w client
+// Deploy command: npx wrangler deploy
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "elite-travel",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./client/dist",
+    // Let deep links such as /vehicles/toyota-innova load the app instead of a 404
+    "not_found_handling": "single-page-application"
+  }
+}

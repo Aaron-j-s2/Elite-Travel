@@ -1,0 +1,322 @@
+{
+  "site": {
+    "settings": {
+      "contact": {
+        "businessName": "Elite Travel Hub",
+        "phone": "+91 90473 39000",
+        "whatsapp": "919047339000",
+        "email": "elitetourandtravel2026@gmail.com",
+        "locality": "Thiruvrambu",
+        "region": "Kerala, India",
+        "addressLine": null,
+        "mapEmbedUrl": "",
+        "mapLink": "",
+        "hours": null,
+        "instagram": "",
+        "facebook": "",
+        "youtube": ""
+      },
+      "home": {
+        "heroEyebrow": "Tourist buses and travel cars · Thiruvrambu, Kerala",
+        "heroTitle": "Travel together in comfort.",
+        "heroText": "Hire a tourist traveller or a car for family trips, group tours, outstation journeys and sightseeing. You book directly with us — the people who own and run the vehicles.",
+        "fleetTitle": "Choose your vehicle.",
+        "fleetText": "These are photos of our own vehicles. Choose the one that suits your group and send us your trip details.",
+        "servicesTitle": "A vehicle for every kind of trip.",
+        "experiencesTitle": "Plan the trip your way.",
+        "experiencesText": "Tell us where you want to go — a temple visit, a hill-station weekend, a wedding or a long trip outside Kerala. We plan the vehicle and timings around you.",
+        "whyTitle": "Why customers choose us",
+        "ctaTitle": "Ready to plan your trip?",
+        "ctaText": "Send us your trip details. We will call you back to confirm the vehicle, timing and fare."
+      },
+      "whyChoose": {
+        "items": [
+          {
+            "title": "Book directly with the owners",
+            "text": "Your request comes straight to Elite Travel Hub, not to an agent. Call or WhatsApp us any time to talk it through."
+          },
+          {
+            "title": "Real photos of our vehicles",
+            "text": "The vehicle photos on this site show our own fleet, inside and out, so you know what to expect."
+          },
+          {
+            "title": "The right size for your group",
+            "text": "Choose a car for a small family, or a tourist traveller when the whole family, team or wedding party is coming."
+          },
+          {
+            "title": "Clear booking status",
+            "text": "You get a booking reference straight away. Nothing is confirmed until we confirm it, and you can check the status online at any time."
+          }
+        ]
+      },
+      "experiences": {
+        "items": [
+          {
+            "title": "Family trips",
+            "text": "Room for everyone and their luggage. Tell us your stops and we will plan the timing."
+          },
+          {
+            "title": "Pilgrimages and temple visits",
+            "text": "Early starts and routes with several stops, for groups travelling together."
+          },
+          {
+            "title": "Weddings and functions",
+            "text": "Take guests between the venue, the ceremony and the reception in one trip."
+          },
+          {
+            "title": "Hill stations and weekend trips",
+            "text": "Outstation trips with a driver who knows the roads, so everyone can enjoy the view."
+          },
+          {
+            "title": "Office and college groups",
+            "text": "Team outings, study tours and events — one vehicle, one schedule, everyone together."
+          }
+        ]
+      },
+      "seo": {
+        "siteTitle": "Elite Travel Hub — Tourist Buses & Travel Cars in Thiruvrambu, Kerala",
+        "titleTemplate": "%s · Elite Travel Hub",
+        "description": "Book tourist travellers and travel cars for family trips, group tours, outstation journeys and sightseeing with Elite Travel Hub, Thiruvrambu, Kerala.",
+        "ogImage": "/images/og-default.jpg"
+      },
+      "policies": {
+        "bookingTerms": "Submitting the booking form sends a request to Elite Travel Hub. It is not a confirmed booking.\n\nA booking is confirmed only when Elite Travel Hub confirms it. You can check the status at any time with your booking reference and mobile number.\n\nFares, inclusions and payment terms are agreed directly with Elite Travel Hub before confirmation. Any price shown on this website is an indication only.\n\nPlease contact us as early as possible if your plans change so we can update or cancel your request.\n\nFor any question about a booking, call +91 90473 39000 or email elitetourandtravel2026@gmail.com.",
+        "privacyPolicy": "Elite Travel Hub collects the details you enter in the booking and contact forms — your name, mobile number, optional email address and trip details — only to respond to your request and arrange your trip.\n\nYour details are stored securely and are visible only to Elite Travel Hub staff. We do not sell or share them with third parties, except where needed to provide the trip you requested or where required by law.\n\nIf you provide an email address, we may email you about the status of your booking.\n\nTo ask for a copy of your details, or to have them corrected or deleted, contact us at elitetourandtravel2026@gmail.com or +91 90473 39000."
+      }
+    },
+    "services": [
+      {
+        "slug": "tourist-bus-rental",
+        "title": "Tourist bus rental",
+        "summary": "Tourist travellers for groups, with room for everyone and their luggage.",
+        "body": "Hire a traveller for a day trip, a pilgrimage or a tour of several days. Tell us how many people are travelling, where you are going and when, and we will suggest the right vehicle.",
+        "icon": "bus",
+        "image": null
+      },
+      {
+        "slug": "travel-cars",
+        "title": "Travel cars",
+        "summary": "Cars for small families and smaller groups.",
+        "body": "For a family trip or a small group, book one of our cars. Ask us about the driver and timings when you send your request.",
+        "icon": "car",
+        "image": null
+      },
+      {
+        "slug": "group-transportation",
+        "title": "Group transportation",
+        "summary": "One vehicle and one schedule for your office, college or wedding group.",
+        "body": "Office outings, study tours, events and functions. Tell us the number of people and the schedule, and we will plan the vehicles and timings.",
+        "icon": "users",
+        "image": null
+      },
+      {
+        "slug": "family-trips",
+        "title": "Family trips",
+        "summary": "Holidays, temple visits and family get-togethers.",
+        "body": "From grandparents to children — travel at your own pace and stop wherever you need to.",
+        "icon": "heart",
+        "image": null
+      },
+      {
+        "slug": "outstation-travel",
+        "title": "Outstation travel",
+        "summary": "One-way trips, round trips and tours of several days, in Kerala and beyond.",
+        "body": "Tell us your route and dates. We will confirm the vehicle, timings and fare with you before your trip is booked.",
+        "icon": "route",
+        "image": null
+      },
+      {
+        "slug": "sightseeing",
+        "title": "Sightseeing",
+        "summary": "Hill stations, backwaters, beaches and heritage sites — at your own pace.",
+        "body": "Plan a day of sightseeing or a weekend trip. Tell us the places you want to see and we will help you plan the timings.",
+        "icon": "mountain",
+        "image": null
+      },
+      {
+        "slug": "customised-travel",
+        "title": "Customised travel",
+        "summary": "Have a different plan? Tell us and we will arrange it.",
+        "body": "Special routes, special occasions or trips with many stops — send us the details or call us to talk it through.",
+        "icon": "sparkles",
+        "image": null
+      }
+    ],
+    "testimonials": []
+  },
+  "vehicles": [
+    {
+      "id": "35bb4b75-49ad-4ed7-9f7a-3b7a73dac753",
+      "slug": "force-traveller-elite-livery",
+      "name": "Force Traveller — Elite Livery",
+      "category": "bus",
+      "makeModel": "Force Traveller",
+      "seats": null,
+      "tagline": "Our signature white traveller in Elite Travel Hub colours.",
+      "description": "A high-roof Force Traveller in white with the Elite Travel Hub stripes. It has curtained windows and soft cabin lighting for evening trips.",
+      "amenities": [
+        "Curtained windows",
+        "Ambient cabin lighting",
+        "High roof"
+      ],
+      "specs": [],
+      "pricing": null,
+      "isFeatured": true,
+      "images": [
+        {
+          "id": "f016504b-133d-46c5-b52a-8125b9b68e7c",
+          "base": "/images/fleet/traveller-elite-livery-night-profile",
+          "widths": [
+            480,
+            960,
+            1600,
+            2400
+          ],
+          "width": 4160,
+          "height": 3120,
+          "alt": "Side view of the Elite Force Traveller at night, with warm light glowing through the curtained windows"
+        },
+        {
+          "id": "33dd65d9-2840-43bb-9ad2-c50b2eaa0750",
+          "base": "/images/fleet/traveller-elite-livery-side-quarter",
+          "widths": [
+            480,
+            960,
+            1600,
+            2400
+          ],
+          "width": 4160,
+          "height": 3120,
+          "alt": "White Force Traveller with the Elite Travel Hub blue-and-red stripes, parked at night"
+        },
+        {
+          "id": "8a1099bd-b554-4585-8fd2-d145f16f3e66",
+          "base": "/images/fleet/traveller-elite-livery-night-front-quarter",
+          "widths": [
+            480,
+            960,
+            1600,
+            2400
+          ],
+          "width": 4160,
+          "height": 3120,
+          "alt": "Force Traveller in Elite livery at night, lit with blue lights at the front"
+        },
+        {
+          "id": "3a6b0368-b665-48f5-8767-35e131a599b9",
+          "base": "/images/fleet/traveller-elite-livery-front",
+          "widths": [
+            480,
+            960,
+            1600,
+            2400
+          ],
+          "width": 3120,
+          "height": 4160,
+          "alt": "Front of the Elite Force Traveller with Elite Travel Hub branding on the windscreen"
+        },
+        {
+          "id": "a8d799f2-805d-4cf3-840e-ceabb2e422a9",
+          "base": "/images/fleet/traveller-elite-livery-rear-night",
+          "widths": [
+            480,
+            960,
+            1600,
+            2400
+          ],
+          "width": 4160,
+          "height": 3120,
+          "alt": "Back of the Elite Force Traveller at night, with the Elite Travel Hub sign lit in the rear window"
+        }
+      ]
+    },
+    {
+      "id": "7261a7d7-3a4b-4507-8639-60496ad33802",
+      "slug": "force-traveller-black-grille",
+      "name": "Force Traveller — Black Grille",
+      "category": "bus",
+      "makeModel": "Force Traveller",
+      "seats": null,
+      "tagline": "A white Force Traveller with a black front grille.",
+      "description": "A high-roof Force Traveller in white, with a black mesh grille, a shaped front bumper, a roof ladder and a spare wheel at the back.",
+      "amenities": [
+        "High roof",
+        "Roof ladder",
+        "Rear spare wheel"
+      ],
+      "specs": [],
+      "pricing": null,
+      "isFeatured": true,
+      "images": [
+        {
+          "id": "01dbe983-5186-4fa9-a7c7-4d1b480950f6",
+          "base": "/images/fleet/traveller-black-grille-front-street",
+          "widths": [
+            480,
+            960,
+            1600,
+            2400
+          ],
+          "width": 3120,
+          "height": 4160,
+          "alt": "White Force Traveller with a black mesh grille, parked on a town street"
+        },
+        {
+          "id": "27dfcf92-b94a-42c3-b3e5-e9e09c450818",
+          "base": "/images/fleet/traveller-black-grille-front-garden",
+          "widths": [
+            480,
+            960,
+            1600,
+            2400
+          ],
+          "width": 3120,
+          "height": 4160,
+          "alt": "White Force Traveller with Elite Travel Hub branding on the windscreen, parked among banana trees"
+        },
+        {
+          "id": "442da9e2-55c0-463f-855d-63773055ca9e",
+          "base": "/images/fleet/traveller-black-grille-rear",
+          "widths": [
+            480,
+            960,
+            1600,
+            2400
+          ],
+          "width": 3120,
+          "height": 4160,
+          "alt": "Back of a white Force Traveller with a roof ladder, spare wheel and Elite Travel Hub rear-window sign"
+        }
+      ]
+    },
+    {
+      "id": "f123d125-6208-4a61-b435-98694bfd5cca",
+      "slug": "toyota-innova",
+      "name": "Toyota Innova",
+      "category": "car",
+      "makeModel": "Toyota Innova",
+      "seats": null,
+      "tagline": "A silver Toyota Innova for families and small groups.",
+      "description": "A comfortable silver Toyota Innova for family trips, small groups and special occasions such as weddings.",
+      "amenities": [],
+      "specs": [],
+      "pricing": null,
+      "isFeatured": true,
+      "images": [
+        {
+          "id": "01725d7f-1b3b-4da4-8a17-80904582edff",
+          "base": "/images/fleet/toyota-innova-front",
+          "widths": [
+            480,
+            960,
+            1600,
+            2400
+          ],
+          "width": 3120,
+          "height": 4160,
+          "alt": "Silver Toyota Innova decorated with red roses on the bonnet"
+        }
+      ]
+    }
+  ]
+}

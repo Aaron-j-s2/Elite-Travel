@@ -12,6 +12,8 @@ export class ApiError extends Error {
 
 type Method = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE';
 
+const UNAVAILABLE = 'Online booking isn’t available right now. Please call or WhatsApp us — we’ll be happy to help.';
+
 async function request<T>(method: Method, url: string, body?: unknown, signal?: AbortSignal): Promise<T> {
   const isForm = body instanceof FormData;
   let res: Response;
@@ -33,6 +35,9 @@ async function request<T>(method: Method, url: string, body?: unknown, signal?: 
     throw new ApiError(0, 'We couldn’t reach the server. Check your connection and try again.', 'network');
   }
   const data = res.headers.get('content-type')?.includes('application/json') ? await res.json().catch(() => null) : null;
+  // The API always answers in JSON. Anything else means there is no server behind this site
+  // (e.g. a static-only deployment answering /api with the website's HTML).
+  if (data === null) throw new ApiError(0, UNAVAILABLE, 'unavailable');
   if (!res.ok) {
     if (res.status === 401 && url.startsWith('/api/admin') && !url.startsWith('/api/admin/auth/')) {
       window.dispatchEvent(new Event('eth:unauthorized'));

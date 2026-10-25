@@ -1,6 +1,10 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import { api } from './api';
+import snapshot from '../data/site-snapshot.json';
 import type { SiteData, Vehicle } from './types';
+
+/** Content saved at build time (npm run snapshot:site), shown when the API can't be reached. */
+export const SNAPSHOT = snapshot as unknown as { site: SiteData; vehicles: Vehicle[] };
 
 /** Verified business details — used until the editable copy has loaded, and if the API is unreachable. */
 export const FALLBACK_CONTACT = {
@@ -44,7 +48,10 @@ export function SiteProvider({ children }: { children: ReactNode }) {
         setVehicles(v.vehicles);
       })
       .catch((err) => {
-        if (err.name !== 'AbortError') setError(true);
+        if (err.name === 'AbortError') return;
+        // No server (e.g. a static deployment): show the saved content instead of an empty site.
+        setSite(SNAPSHOT.site);
+        setVehicles(SNAPSHOT.vehicles);
       });
     return () => ctrl.abort();
   }, [nonce]);

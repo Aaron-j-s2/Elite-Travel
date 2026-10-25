@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router';
 import { AnimatePresence, motion } from 'motion/react';
 import { ArrowLeft, ChevronLeft, ChevronRight, Expand, Phone, X } from 'lucide-react';
 import { api, ApiError } from '../lib/api';
-import { useSite } from '../lib/site';
+import { SNAPSHOT, useSite } from '../lib/site';
 import { useSeo } from '../lib/seo';
 import { CATEGORY_LABEL, addDays, formatDate, telHref, todayIST, whatsappHref } from '../lib/format';
 import type { BusyRange, Vehicle } from '../lib/types';
@@ -214,8 +214,11 @@ export default function VehicleDetail() {
       .get<{ vehicle: Vehicle }>(`/api/vehicles/${slug}`, ctrl.signal)
       .then((r) => setVehicle(r.vehicle))
       .catch((err) => {
+        if (err.name === 'AbortError') return;
+        const saved = SNAPSHOT.vehicles.find((v) => v.slug === slug);
         if (err instanceof ApiError && err.status === 404) setMissing(true);
-        else if (err.name !== 'AbortError') setFailed(true);
+        else if (saved) setVehicle(saved);
+        else setFailed(true);
       });
     return () => ctrl.abort();
   }, [slug]);
