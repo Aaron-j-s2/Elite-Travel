@@ -1,0 +1,26 @@
+{
+  "name": "elite-travel-hub",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Elite Travel Hub — premium tourist vehicle booking website and admin dashboard",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "npm run dev -w server & npm run dev -w client",
+    "build": "npm run build -w client && npm run build -w server",
+    "start": "npm run start -w server",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w client",
+    "lint": "npm run lint -w client",
+    "test": "npm run test -w server",
+    "db:migrate": "npm run db:migrate -w server",
+    "db:seed": "npm run db:seed -w server",
+    "admin:create": "npm run admin:create -w server --",
+    "images:process": "node scripts/process-images.mjs",
+    "test:e2e": "npm run test:e2e -w client"
+  }
+}

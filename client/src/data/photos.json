@@ -1,0 +1,305 @@
+{
+  "photos": {
+    "interior-blue-pushback-seats-kathakali-panels": {
+      "base": "/images/fleet/interior-blue-pushback-seats-kathakali-panels",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 4160,
+      "height": 3120,
+      "alt": "Inside a traveller: blue push-back seats, curtains and lit Kathakali art panels on the ceiling",
+      "kind": "interior",
+      "vehicle": null,
+      "tone": "rgb(8 8 88)"
+    },
+    "traveller-black-grille-front-garden": {
+      "base": "/images/fleet/traveller-black-grille-front-garden",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 3120,
+      "height": 4160,
+      "alt": "White Force Traveller with Elite Travel Hub branding on the windscreen, parked among banana trees",
+      "kind": "exterior",
+      "vehicle": "black-grille",
+      "tone": "rgb(8 8 8)"
+    },
+    "traveller-black-grille-rear": {
+      "base": "/images/fleet/traveller-black-grille-rear",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 3120,
+      "height": 4160,
+      "alt": "Back of a white Force Traveller with a roof ladder, spare wheel and Elite Travel Hub rear-window sign",
+      "kind": "exterior",
+      "vehicle": "black-grille",
+      "tone": "rgb(216 232 248)"
+    },
+    "traveller-elite-livery-night-front-quarter": {
+      "base": "/images/fleet/traveller-elite-livery-night-front-quarter",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 4160,
+      "height": 3120,
+      "alt": "Force Traveller in Elite livery at night, lit with blue lights at the front",
+      "kind": "exterior",
+      "vehicle": "elite-livery",
+      "tone": "rgb(40 40 40)"
+    },
+    "traveller-elite-livery-night-profile": {
+      "base": "/images/fleet/traveller-elite-livery-night-profile",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 4160,
+      "height": 3120,
+      "alt": "Side view of the Elite Force Traveller at night, with warm light glowing through the curtained windows",
+      "kind": "exterior",
+      "vehicle": "elite-livery",
+      "tone": "rgb(216 216 216)"
+    },
+    "traveller-elite-livery-front": {
+      "base": "/images/fleet/traveller-elite-livery-front",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 3120,
+      "height": 4160,
+      "alt": "Front of the Elite Force Traveller with Elite Travel Hub branding on the windscreen",
+      "kind": "exterior",
+      "vehicle": "elite-livery",
+      "tone": "rgb(200 200 200)"
+    },
+    "interior-white-leather-cabin-forward": {
+      "base": "/images/fleet/interior-white-leather-cabin-forward",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 4160,
+      "height": 3120,
+      "alt": "Inside a traveller: white quilted leather captain seats and an overhead screen",
+      "kind": "interior",
+      "vehicle": null,
+      "tone": "rgb(120 104 136)"
+    },
+    "interior-white-leather-floral-ceiling": {
+      "base": "/images/fleet/interior-white-leather-floral-ceiling",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 4160,
+      "height": 3120,
+      "alt": "White quilted leather seats under a lit floral ceiling panel with soft ambient light",
+      "kind": "interior",
+      "vehicle": null,
+      "tone": "rgb(8 8 40)"
+    },
+    "traveller-elite-livery-side-quarter": {
+      "base": "/images/fleet/traveller-elite-livery-side-quarter",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 4160,
+      "height": 3120,
+      "alt": "White Force Traveller with the Elite Travel Hub blue-and-red stripes, parked at night",
+      "kind": "exterior",
+      "vehicle": "elite-livery",
+      "tone": "rgb(216 200 200)"
+    },
+    "fleet-three-travellers-lineup": {
+      "base": "/images/fleet/fleet-three-travellers-lineup",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 4032,
+      "height": 3024,
+      "alt": "Three white travellers parked side by side in front of trees at dusk",
+      "kind": "fleet",
+      "vehicle": null,
+      "tone": "rgb(8 8 8)"
+    },
+    "toyota-innova-front": {
+      "base": "/images/fleet/toyota-innova-front",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 3120,
+      "height": 4160,
+      "alt": "Silver Toyota Innova decorated with red roses on the bonnet",
+      "kind": "exterior",
+      "vehicle": "innova",
+      "tone": "rgb(152 152 152)"
+    },
+    "interior-white-leather-rows-ambient": {
+      "base": "/images/fleet/interior-white-leather-rows-ambient",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 4160,
+      "height": 3120,
+      "alt": "Rows of white leather seats with soft pink and violet lighting and curtained windows",
+      "kind": "interior",
+      "vehicle": null,
+      "tone": "rgb(72 56 72)"
+    },
+    "interior-blue-seats-led-ceiling": {
+      "base": "/images/fleet/interior-blue-seats-led-ceiling",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 4160,
+      "height": 3120,
+      "alt": "Traveller cabin with blue seats, LED ceiling lights and lit art panels",
+      "kind": "interior",
+      "vehicle": null,
+      "tone": "rgb(8 40 232)"
+    },
+    "traveller-black-grille-front-street": {
+      "base": "/images/fleet/traveller-black-grille-front-street",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 3120,
+      "height": 4160,
+      "alt": "White Force Traveller with a black mesh grille, parked on a town street",
+      "kind": "exterior",
+      "vehicle": "black-grille",
+      "tone": "rgb(216 232 248)"
+    },
+    "traveller-elite-livery-rear-night": {
+      "base": "/images/fleet/traveller-elite-livery-rear-night",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 4160,
+      "height": 3120,
+      "alt": "Back of the Elite Force Traveller at night, with the Elite Travel Hub sign lit in the rear window",
+      "kind": "exterior",
+      "vehicle": "elite-livery",
+      "tone": "rgb(40 40 40)"
+    },
+    "interior-cream-seats-wood-panels": {
+      "base": "/images/fleet/interior-cream-seats-wood-panels",
+      "widths": [
+        480,
+        960,
+        1600,
+        2400
+      ],
+      "width": 3120,
+      "height": 4160,
+      "alt": "Cream leather seats under wood-finish overhead panels, speakers and a floral ceiling light",
+      "kind": "interior",
+      "vehicle": null,
+      "tone": "rgb(200 200 200)"
+    }
+  },
+  "cutouts": {
+    "traveller-elite-livery-profile": {
+      "base": "/images/cutouts/traveller-elite-livery-profile",
+      "widths": [
+        480,
+        960,
+        1600
+      ],
+      "width": 1789,
+      "height": 1110,
+      "alt": "Force Traveller in Elite livery, side view",
+      "vehicle": "elite-livery"
+    },
+    "traveller-elite-livery-side": {
+      "base": "/images/cutouts/traveller-elite-livery-side",
+      "widths": [
+        480,
+        960,
+        1600
+      ],
+      "width": 1700,
+      "height": 1363,
+      "alt": "Force Traveller in Elite livery, seen from the front corner",
+      "vehicle": "elite-livery"
+    },
+    "traveller-elite-livery-front": {
+      "base": "/images/cutouts/traveller-elite-livery-front",
+      "widths": [
+        480,
+        960,
+        1445
+      ],
+      "width": 1445,
+      "height": 1545,
+      "alt": "Force Traveller in Elite livery, front view",
+      "vehicle": "elite-livery"
+    },
+    "traveller-black-grille-front": {
+      "base": "/images/cutouts/traveller-black-grille-front",
+      "widths": [
+        480,
+        960,
+        1193
+      ],
+      "width": 1193,
+      "height": 1360,
+      "alt": "Force Traveller with a black mesh grille, front view",
+      "vehicle": "black-grille"
+    },
+    "toyota-innova-front": {
+      "base": "/images/cutouts/toyota-innova-front",
+      "widths": [
+        480,
+        801
+      ],
+      "width": 801,
+      "height": 727,
+      "alt": "Silver Toyota Innova, front view",
+      "vehicle": "innova"
+    }
+  }
+}

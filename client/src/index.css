@@ -1,0 +1,305 @@
+@import 'tailwindcss';
+
+/* ==========================================================================
+   Elite Travel Hub — design tokens
+   Drawn from the fleet's own livery — white bodywork, a navy wordmark and a
+   red-and-blue stripe — refined into midnight navy, warm porcelain and muted royal blue.
+   ========================================================================== */
+@theme {
+  /* Midnight navy and warm porcelain, with a muted royal blue taken from the livery stripe.
+     The livery red is kept for the two-bar stripe mark only. */
+  --color-ink: #0b0f19;
+  --color-navy: #0f1f3d;
+  --color-navy-2: #1a3163;
+  --color-azure: #34558f;
+  --color-azure-2: #aebfe0;
+  --color-steel: #4a5468;
+  --color-mist: #b3bac8;
+  --color-paper: #f4f1eb;
+  --color-ivory: #fbfaf6;
+  --color-fog: #ebe6dc;
+  --color-stone: #cbc3b4;
+  --color-signal: #b5392f;
+  --color-signal-2: #e0756b;
+  --color-plate: #f0c33c;
+  --color-muted: #5c606d;
+  --color-line: #ddd6c9;
+  --color-danger: #a8322a;
+  --color-success: #2a6a4a;
+  --color-warn: #8a5d10;
+
+  --font-sans: 'Archivo Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Archivo Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --text-display: clamp(2.6rem, 0.8rem + 8vw, 8.5rem);
+  --text-display--line-height: 0.92;
+  --text-h1: clamp(2.2rem, 1.3rem + 3.8vw, 4.8rem);
+  --text-h1--line-height: 0.98;
+  --text-h2: clamp(1.8rem, 1.2rem + 2.4vw, 3.3rem);
+  --text-h2--line-height: 1.04;
+  --text-h3: clamp(1.25rem, 1.08rem + 0.75vw, 1.7rem);
+  --text-h3--line-height: 1.12;
+
+  --radius-card: 0.25rem;
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-drive: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+    font-stretch: 100%;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+  ::selection {
+    background: var(--color-navy);
+    color: var(--color-ivory);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-azure);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  img {
+    max-width: 100%;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  .wrap {
+    @apply mx-auto w-full max-w-[96rem] px-4 sm:px-6 lg:px-10;
+  }
+
+  /* Type system ----------------------------------------------------------- */
+  /* Display: the windscreen wordmark — expanded, heavy, upper-case */
+  .display {
+    font-family: var(--font-display);
+    font-stretch: 122%;
+    font-weight: 560;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+  /* Headline: section titles — gently expanded, light, sentence case */
+  .headline {
+    font-family: var(--font-display);
+    font-stretch: 108%;
+    font-weight: 440;
+    letter-spacing: -0.025em;
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .lede {
+    @apply text-[1.05rem] leading-relaxed text-muted sm:text-[1.15rem];
+  }
+  /* Livery stripe — the red-over-blue swoosh reduced to two slanted bars */
+  .stripe {
+    display: inline-block;
+    width: 2.25rem;
+    height: 0.5rem;
+    flex-shrink: 0;
+    background:
+      linear-gradient(var(--color-signal), var(--color-signal)) top / 100% 2px no-repeat,
+      linear-gradient(var(--color-azure), var(--color-azure)) bottom / 100% 2px no-repeat;
+    transform: skewX(-28deg);
+  }
+
+  /* Buttons — square-shouldered, with a fill that drives in from the left */
+  .btn {
+    @apply relative isolate inline-flex min-h-12 items-center justify-center gap-2.5 overflow-hidden rounded-[2px] px-6 text-[0.9rem] font-medium whitespace-nowrap transition-[color,border-color,transform] duration-500 select-none active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-55;
+    font-stretch: 106%;
+    letter-spacing: 0.005em;
+    transition-timing-function: var(--ease-out-soft);
+  }
+  .btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.55s var(--ease-drive);
+  }
+  .btn:hover:not(:disabled)::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .btn svg {
+    transition: transform 0.45s var(--ease-out-soft);
+  }
+  .btn:hover:not(:disabled) svg.lucide-arrow-right,
+  .btn:hover:not(:disabled) svg.lucide-arrow-up-right {
+    transform: translateX(3px);
+  }
+  .btn-primary {
+    @apply bg-navy text-ivory before:bg-navy-2;
+  }
+  /* Ivory button for dark sections */
+  .btn-light {
+    @apply bg-ivory text-ink before:bg-paper hover:text-navy;
+  }
+  .btn-ghost {
+    @apply border border-ink/20 text-ink before:bg-ink hover:border-ink hover:text-ivory;
+  }
+  .btn-ghost-light {
+    @apply border border-ivory/30 text-ivory before:bg-ivory hover:border-ivory hover:text-ink;
+  }
+  .btn-sm {
+    @apply min-h-10 px-4 text-sm;
+  }
+  .link-arrow {
+    @apply inline-flex items-center gap-1.5 font-semibold;
+    background: linear-gradient(currentColor, currentColor) left bottom / 100% 1px no-repeat;
+    padding-bottom: 3px;
+    transition: background-size 0.5s var(--ease-drive);
+  }
+  .link-arrow:hover {
+    background-size: 0% 1px;
+    background-position: right bottom;
+  }
+  .link-underline {
+    background: linear-gradient(currentColor, currentColor) right bottom / 0% 1px no-repeat;
+    transition: background-size 0.5s var(--ease-drive);
+  }
+  .link-underline:hover {
+    background-size: 100% 1px;
+    background-position: left bottom;
+  }
+
+  /* Forms */
+  .field-label {
+    @apply mb-1.5 block text-[0.8rem] font-semibold tracking-wide text-ink/80;
+  }
+  .input {
+    @apply block min-h-12 w-full rounded-[3px] border border-line bg-ivory px-4 text-base text-ink transition placeholder:text-muted/60 hover:border-stone focus:border-navy focus:ring-4 focus:ring-navy/10 focus:outline-none aria-[invalid=true]:border-danger aria-[invalid=true]:ring-danger/10;
+  }
+  textarea.input {
+    @apply min-h-28 py-3 leading-relaxed;
+  }
+  select.input {
+    @apply appearance-none bg-no-repeat pr-10;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1.5 6 6.5l5-5' stroke='%230b0f19' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-position: right 1rem center;
+  }
+  .field-error {
+    @apply mt-1.5 flex items-center gap-1 text-[0.8rem] font-medium text-danger;
+  }
+
+  /* Ticket stub — notched sides, perforated divider (booking confirmations) */
+  .ticket {
+    position: relative;
+    background: var(--color-ivory);
+    border-radius: 0.5rem;
+    --notch: 12px;
+    -webkit-mask:
+      radial-gradient(circle var(--notch) at 0 var(--notch-y, 50%), #0000 98%, #000) left / 51% 100% no-repeat,
+      radial-gradient(circle var(--notch) at 100% var(--notch-y, 50%), #0000 98%, #000) right / 51% 100% no-repeat;
+    mask:
+      radial-gradient(circle var(--notch) at 0 var(--notch-y, 50%), #0000 98%, #000) left / 51% 100% no-repeat,
+      radial-gradient(circle var(--notch) at 100% var(--notch-y, 50%), #0000 98%, #000) right / 51% 100% no-repeat;
+  }
+  .perforation {
+    height: 1px;
+    background-image: linear-gradient(90deg, var(--color-stone) 55%, transparent 0);
+    background-size: 10px 1px;
+  }
+  .perforation-v {
+    width: 1px;
+    background-image: linear-gradient(180deg, var(--color-stone) 55%, transparent 0);
+    background-size: 1px 10px;
+  }
+
+  /* Road markings */
+  .route-line {
+    background-image: linear-gradient(90deg, currentColor 50%, transparent 0);
+    background-size: 14px 1.5px;
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 1.5px;
+  }
+  .route-line-v {
+    background-image: linear-gradient(180deg, currentColor 50%, transparent 0);
+    background-size: 1.5px 14px;
+    background-repeat: repeat-y;
+    width: 1.5px;
+  }
+
+  /* Indian highway milestone (404 page) */
+  .milestone {
+    @apply relative inline-flex flex-col items-center overflow-hidden rounded-t-[999px] rounded-b-md bg-ivory text-center text-ink shadow-[0_18px_40px_-20px_rgb(0_0_0/0.6)];
+  }
+  .milestone::before {
+    content: '';
+    @apply absolute inset-x-0 top-0 h-[38%] bg-plate;
+  }
+
+  /* Subtle film grain for dark sections */
+  .grain {
+    position: relative;
+    isolation: isolate;
+  }
+  .grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.3;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Hairline layout grid behind the hero — like a vehicle spec drawing */
+  .spec-grid {
+    background-image: linear-gradient(90deg, rgb(11 15 25 / 0.045) 1px, transparent 1px);
+    background-size: calc(100% / 6) 100%;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--color-fog) 25%, var(--color-ivory) 50%, var(--color-fog) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+}

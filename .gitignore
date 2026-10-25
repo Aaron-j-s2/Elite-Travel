@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+server/uploads/
+client/test-results/
+client/playwright-report/
+supabase/.temp/
+supabase/.branches/
+*.log
+.DS_Store
